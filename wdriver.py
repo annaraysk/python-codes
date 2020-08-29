@@ -20,4 +20,4 @@ driver.find_element_by_xpath("""/html/body/div[4]/div/div/div/div[3]/button[2]""
 driver.get("https://www.instagram.com/hack_it_like_you_know/followers")
 driver.find_element_by_xpath("""//*[@id="react-root"]/section/main/div/header/section/ul/li[2]/a""").click()
 followersPageSource = driver.page_source
-soup = bss(s, features='html.parser')
+soup = bss(followersPageSource, features='html.parser')
