@@ -15,6 +15,7 @@ cookie_file='cookie.data'
 cookies = pickle.load(open(cookie_file, "rb"))
 for i in cookies:
 	driver.add_cookie(i)
+
 driver.get('https://instagram.com/'+myUserId+'/followers')
 driver.find_element_by_xpath("""//*[@id="react-root"]/section/main/div/header/section/ul/li[2]/a""").click()
 
